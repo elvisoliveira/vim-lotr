@@ -161,8 +161,8 @@ function! s:OpenWindow() "{{{2
   endif
 
   let openpos = {
-        \ 'top'    : 'topleft',  'left'  : 'topleft vertical',
-        \ 'bottom' : 'botright', 'right' : 'botright vertical'}
+        \ 'top'    : 'topleft',  'left'  : 'topleft',
+        \ 'bottom' : 'botright', 'right' : 'rightbelow'}
         \[g:lotr_position] . ' '
   exe 'silent keepalt ' . openpos . g:lotr_winsize . ' split ' . '__LOTR__'
   call s:InitWindow()
